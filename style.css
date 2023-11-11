@@ -1,0 +1,59 @@
+.container{
+    display: grid;
+    grid-template-rows: 1fr 4fr auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    min-height: 100vh;
+    margin: 20px;
+}
+
+img {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.sidebar {
+    border: solid 1px;
+    gap: 10px;
+    display: grid;
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+.topbar {
+    display: flex;
+    border: solid red 1px;
+    padding-bottom: 20px;
+    grid-area: 1 / 2 / 2 / 4;
+    align-items: center;
+}
+
+input {
+    border-radius: 20px;
+    height: 15px;
+    padding-right: 200px;
+    margin-right: 200px;
+ 
+}
+
+.button {
+    border-radius: 10px;
+    width: 110px;
+    height: 25px;
+
+}
+
+
+.logo {
+    padding-left: 10px;
+}
+
+.projects {
+    display: grid;
+    grid-area: 2 / 2 / 4 / 4;
+    border: solid 1px blue;
+}
+
+.announcements {
+    border: solid 1px green;
+    display: grid;
+    grid-area: 2 / 3 / 4 / 4;
+}
